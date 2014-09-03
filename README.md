@@ -1,4 +1,1 @@
-dangerous-threshold
-===================
-
-Explore Mann's climate projections from Scientific American
+![](https://github.com/climateblab/dangerous-threshold/blob/gh-pages/thumb.png)

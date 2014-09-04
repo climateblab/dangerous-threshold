@@ -1,11 +1,9 @@
 # CO2 concentration data
 fig = figure
     xlabel: "Year"
-    ylabel: "CO2 (ppm)"
+    ylabel: "CO2 forcing"
 
-plotXY = (data) -> #;
-    X = (parseInt(x) for x, y of data)
-    Y = (y for x, y of data)
-    plot X, Y, fig: fig
+{years, forcing} = $blab.parseCO2Data()#;
+plot years, forcing, fig: fig
 
-plotXY $blab.resources.getJSON "data.json"
+

@@ -1,6 +1,8 @@
 [
+    {"url": "data.json", "id": "CO2_data"},
     "data.json",
     "main.html",
     "main.css",
+    "parser.coffee",
     "main.coffee"
 ]

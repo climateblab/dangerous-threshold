@@ -1,6 +1,7 @@
 [
-    "data.json",
+    {"url": "data.json", "id": "aerosol_data"},
     "main.html",
     "main.css",
+    "parser.coffee",
     "main.coffee"
 ]

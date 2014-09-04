@@ -10,6 +10,4 @@ plotXY = (data) -> #;
 
 # Import data.
 # Col1=Year, Col2=forcing (units?).
-data = $blab.resources.getJSON "data.json" #;
-
-plotXY data
+plotXY $blab.resource "volcanicForcing"

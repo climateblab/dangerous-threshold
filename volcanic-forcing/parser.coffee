@@ -5,4 +5,4 @@ $blab.parseVolcanicData = ->
     return null unless data
     years = (parseInt(y) for y, c of data)
     forcing = (c for y, c of data)
-    $blab.solar = {years, forcing}
+    $blab.volcanic = {years, forcing}

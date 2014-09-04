@@ -1,6 +1,7 @@
 [
-    {"url": "data.json", "id": "volcanicForcing"},
+    {"url": "data.json", "id": "volcanic_data"},
     "main.html",
     "main.css",
+    "parser.coffee",
     "main.coffee"
 ]

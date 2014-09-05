@@ -4,7 +4,7 @@ fig = figure
     ylabel: "CO2 forcing"
 
 CO2_data = $blab.resource "CO2_data" #;
-{years, forcing} = $blab.parseCO2Data(CO2_data)#;
-plot years, forcing, fig: fig
+{years, co2} = $blab.parseCO2Data(CO2_data)#;
+plot years, co2, fig: fig
 
 

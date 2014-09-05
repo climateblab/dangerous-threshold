@@ -12,7 +12,8 @@ figUncertainty = figure
     xlabel: "Year"
     ylabel: "Uncertainty"
 
-{years, forcing, uncertainty} = $blab.parseAerosolData()#;
+aerosol_data = $blab.resource "aerosol_data"#;
+{years, forcing, uncertainty} = $blab.parseAerosolData(aerosol_data)#;
 plot years, forcing, fig: figForcing
 plot years, uncertainty, fig: figUncertainty
 

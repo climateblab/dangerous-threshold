@@ -3,7 +3,8 @@ fig = figure
     xlabel: "Year"
     ylabel: "Temp (deg. C)"
 
-{years, temp} = $blab.parseInhmstData()#;
+inhmst_data = $blab.resource "inhmst_data"#;
+{years, temp} = $blab.parseInhmstData(inhmst_data)#;
 plot years, temp, fig: fig
 
 

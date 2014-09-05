@@ -1,0 +1,8 @@
+[
+    {"url": "data.json", "id": "best_data"},
+    "data.json",
+    "main.html",
+    "main.css",
+    "parser.coffee",
+    "main.coffee"
+]

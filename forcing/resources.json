@@ -1,14 +1,16 @@
 [
-    "main.html",
-    "main.css",
-    {"url": "../co2-forcing/data.json", "id": "CO2_data"},
+    {"url": "../co2-forcing/data.json", "id": "co2_data"},
     {"url": "../aerosol-forcing/data.json", "id": "aerosol_data"},
     {"url": "../solar-forcing/data.json", "id": "solar_data"},
     {"url": "../volcanic-forcing/data.json", "id": "volcanic_data"},
-    "../utility.coffee",
     "../solar-forcing/parser.coffee",
     "../co2-forcing/parser.coffee",
     "../aerosol-forcing/parser.coffee",
     "../volcanic-forcing/parser.coffee",
-    "main.coffee"
+    "http://puzlet.org/utility/array.coffee",
+    "http://puzlet.org/utility/math.coffee",
+    "forcing.coffee",
+    "main.coffee",
+    "main.css",
+    "main.html"
 ]

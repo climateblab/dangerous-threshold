@@ -1,11 +1,40 @@
-# Solar forcing
+# Mann forcing
 
-#fig = figure
-#    xlabel: "Year"
-#    ylabel: "Solar forcing"
+figAer = figure
+    xlabel: "Year"
+    ylabel: "AER"
 
-mann_results = $blab.resource "mann_results"#;
-console.log mann_results
 
-#plot years, forcing, fig: fig
+
+
+
+figVolc = figure
+    xlabel: "Year"
+    ylabel: "Volcanic"
+
+
+
+
+
+figSolar = figure
+    xlabel: "Year"
+    ylabel: "Solar"
+
+
+
+
+
+figCo2 = figure
+    xlabel: "Year"
+    ylabel: "CO2"
+
+m = $blab.resource "mann_results"#;
+years = [850..2100] #;
+plot years, m.aer, fig: figAer
+plot years, m.volc, fig: figVolc
+plot years, m.solar, fig: figSolar
+plot years, m.forcingcotwo, fig: figCo2
+
+
+
 

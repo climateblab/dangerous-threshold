@@ -1,0 +1,13 @@
+[
+    {"url": "./inhmst/data.json", "id": "inhmst_data"},
+    {"url": "./best/data.json", "id": "best_data"},
+    {"url": "./mann/data.json", "id": "mann_data"},
+    "http://puzlet.org/utility/array.coffee",
+    "http://puzlet.org/utility/math.coffee",
+    "main.html",
+    "main.css",
+    "./inhmst/parser.coffee",
+    "./best/parser.coffee",
+    "temperature.coffee",
+    "main.coffee"
+]

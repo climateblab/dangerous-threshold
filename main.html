@@ -2,29 +2,104 @@
 
 <div id="text">
 
-  <br/>
+  <div class="left_col">
 
-  <ul>
+    Mann issued a dire warning of climate crisis, perhaps only two
+    decades away:
+    "[http://www.scientificamerican.com/article/mann-why-global-warming-will-cross-a-dangerous-threshold-in-2036,
+    Why Global Warming Will Cross a Dangerous Threshold in 2036]"
+    (Scientific American, April 2014).  You can reproduce his evidence
+    here to interactively explore various scenarios.
+    The <span class="pz_text" ref="sim_note">simulation</span> runs in
+    the browser.
 
-    <li><a href="http://climateblab.github.io/gamsatc/">Global Annual
-	Mean Surface Air Temperature Change</a></li>
+  </div>
 
-    <li><a href="http://climateblab.github.io/dangerous-threshold/co2-concentration">Carbon
-	Dioxide Concentration</a></li>
+  <div class="pz_note" id="key_note">
+    To zoom/pan use the green "brush" control on the small graph. 
 
-    <li><a href="http://climateblab.github.io/dangerous-threshold/aerosol">Historical
-	NH mean aerosol forcing</a></li>
-
-    <li><a href="http://climateblab.github.io/dangerous-threshold/solar-forcing">Solar
-	forcing</a></li>
-
-    <li><a href="http://climateblab.github.io/dangerous-threshold/volcanic-forcing">Volcanic
-	forcing</a></li>
-
+    <a onclick='$blab.setBrush(1990, 2020); return false;'>Click
+    here</a> to zoom into "faux pause".
+    <ul>
+      <li> *Historical data* (white): historical mean average
+      temperature (1850--2013).
+      <li> *Projection* (orange): assumes the world keeps burning
+      fossil fuels at current rate.
+      <li> *Stabilized* (light brown): assumes atmospheric
+      CO<sub>2</sub> levels are stabilized.
+      <li> *Danger threshold* (red): 2-degree rise that scientists say
+	would cause dangerous harm to human civilization.
     </ul>
 
-  <br/>
+  </div>
 
+  <div class="pz_note" id="param_note">
+
+    <ul>
+      <li> *ECS* is __Equilibrium Climate Sensitivity__, which
+	represents how sensitive the atmosphere is to the heating
+	effect of greenhouse gases.  The [http://www.ipcc.ch/,IPCC]
+	estimates that the ECS is in the range *1.5--4.5*.
+      <li> *CO<sub>2</sub>* is the atmospheric carbon dioxide level.
+	In 2013, this was in the range *393--400 ppm*.
+      <li> *Aerosols*.  Aerosol particles in the atmosphere partly
+	block the sun's heat.  Checking this box (default) models a
+	drop in current aerosol levels.  Otherwise, the current level
+	persists.  (Interestingly, reducing coal burning decreases
+	both CO<sub>2</sub> emissions __and__ aerosol levels---see
+	article.)
+    </ul>
+
+</div>
+
+  <div class="pz_note" id="sim_note">
+    Energy Balance Model (EBM) and data, based on
+    [http://www.meteo.psu.edu/holocene/public_html/supplements/EBMProjections,
+    Mann's MATLAB code and results]:
+    <ul>
+      <li> [TBD, EBM Future Projections with variable
+	sensitivity]
+      <li> [TBD, Long-term forcing data and extrapolations]
+	(CO<sub>2</sub>, aerosol, solar, volcanic)
+      <li> [TBD, Instrumental Northern Hemispheric Mean Surface
+      Temperatures]
+      <li> [TBD, Berkeley Earth (BEST) temperature record]
+    </ul>
+
+  </div>
+
+
+  <div class="right_col">
+
+    The <span class="pz_text" ref="key_note">graph</span> shows
+    Northern Hemisphere surface temperature projections (in degrees
+    Celsius, relative to preindustrial levels); in particular, it
+    shows *the year when the surface temperature rises above the 2
+    degree danger threshold*. Adjust the sliders to see the influence
+    of <span class="pz_text" ref="param_note">key parameters</span>.
+
+  </div>
+
+  <div class="clear"></div>
+
+  <div id="loading">Computing Results...</div>
+  <div id="ebm"></div>
+  <div id="paramsContainer">
+    <div id="sensText" title="Equilibrium Climate Sensitivity"></div>
+    <div id="sensSlider"></div>
+    <div id="co2Text" title="Atmospheric carbon dioxide level"></div>
+    <div id="co2Slider"></div>
+    <div id="aerosol" title="Checked: Level of aerosols drops.
+    Unchecked: Current level of aerosols persists."></div>
+  </div>
+
+  <br>
+
+  <div align="right" style="color:grey">Blabbed by Martin Clark with
+    [/,Puzlet].</div>
+
+  <div class="clear"></div>
+  
   <div class="left_col">
     <div data-file="main.coffee"></div>
   </div>    
@@ -32,5 +107,6 @@
   <div class="right_col">
     <div data-eval="main.coffee"></div>
   </div>
+
 
 </div>

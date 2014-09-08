@@ -1,7 +1,7 @@
 #text {
     width: 960px;
     margin: 0 auto;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .left_col {
@@ -17,4 +17,89 @@
 .clear {
     clear: both;
 }
+
+#ebm {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    height: 550px;
+    /*
+    margin-bottom: 40px;
+    top: 10px;
+    */
+    z-index: 10;
+}
+
+#loading {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18pt;
+    color: red;    
+}
+
+#paramsContainer {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    /*height: 330px;  */  
+}
+
+#sensSlider {
+    margin-top: 5px;
+    height: 185px;
+}
+
+#co2Slider {
+    margin-top: 0px;
+    height: 100px;    
+}
+
+#co2Text {
+    margin-top: 30px;
+    cursor: default;
+}
+
+#sensText {
+    cursor: default;
+}
+
+#aerosol {
+    margin-top: 10px;
+    cursor: default;
+}
+
+#series {
+    margin: 0 auto;
+    margin-top: 30px;
+    /*width: 550px;*/
+    padding: 20px;
+    /*background: #ffe;*/
+    border-top: 1px solid black;
+    /*border-radius: 10px;*/
+    text-align: center;
+}
+
+#series div {
+    display: inline-block;
+    width: 180px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 0px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 11pt;
+    line-height: 130%;
+}
+#series img {
+    /*margin-right: 10px;*/
+    margin-bottom: 5px;
+    height: 70px;
+    width: auto;
+    /*vertical-align: top;*/
+    opacity: 0.8;
+    border: 2px solid #ccf;
+    border-radius: 10px;
+}
+
 

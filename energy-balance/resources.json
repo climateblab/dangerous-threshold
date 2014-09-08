@@ -1,0 +1,22 @@
+[
+    {"url": "../co2-forcing/data.json", "id": "co2_data"},
+    {"url": "../aerosol-forcing/data.json", "id": "aerosol_data"},
+    {"url": "../solar-forcing/data.json", "id": "solar_data"},
+    {"url": "../volcanic-forcing/data.json", "id": "volcanic_data"},
+    {"url": "../temperature-data/inhmst/data.json", "id": "inhmst_data"},
+    {"url": "../temperature-data/best/data.json", "id": "best_data"},
+    {"url": "../temperature-data/mann/data.json", "id": "mann_data"},
+    "../solar-forcing/parser.coffee",
+    "../co2-forcing/parser.coffee",
+    "../aerosol-forcing/parser.coffee",
+    "../volcanic-forcing/parser.coffee",
+    "../temperature-data/inhmst/parser.coffee",
+    "../temperature-data/best/parser.coffee",
+    "http://puzlet.org/utility/array.coffee",
+    "http://puzlet.org/utility/math.coffee",
+    "../forcing/forcing.coffee",
+    "../temperature-data/temperature.coffee",
+    "main.html",
+    "main.css",
+    "main.coffee"
+]

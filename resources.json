@@ -13,13 +13,14 @@
     "./forcing/co2/parser.coffee",
     "./forcing/aerosol/parser.coffee",
     "./forcing/volcanic/parser.coffee",
+    "./forcing/forcing.coffee",
     "./temperature/inhmst/parser.coffee",
     "./temperature/best/parser.coffee",
-    "./forcing/forcing.coffee",
     "./temperature/temperature.coffee",
     "./energy-balance/climate-model.coffee",
     "http://puzlet.org/view-finder/plot.coffee",
     "main.html",
     "main.css",
+    "plot.css",
     "main.coffee"
 ]

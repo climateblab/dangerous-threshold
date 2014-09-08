@@ -26,7 +26,7 @@ simulate = (sens) ->
 # Plot results
 plotResults = ->
     
-    #return unless browserOk()
+    #return unless browserOk() # FIXME
     
     initializeModel()
 

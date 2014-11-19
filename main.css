@@ -103,4 +103,6 @@
     border-radius: 10px;
 }
 
+.foot .puzlet-link { float:left }
+.foot .org-link { float:right }
 
